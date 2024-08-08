@@ -1,68 +1,24 @@
-# FCFS OS Scheduling Algorithm
+# Operating Systems Scheduling Algorithms
 
-## Project Description
+Welcome to the repository for Operating Systems Scheduling Algorithms implemented in Python. This repository contains various scheduling algorithms used in operating systems to manage processes. The aim is to provide clear and efficient implementations of these algorithms for educational purposes.
 
-This project implements the First Come First Serve (FCFS) scheduling algorithm in Python. The program calculates various scheduling metrics such as Completion Time (CT), Turnaround Time (TAT), Waiting Time (WT), Average Completion Time (Avg. CT), Average Turnaround Time (Avg. TAT), and Average Waiting Time (Avg. WT) for `n` processes given their Arrival Time (AT) and Burst Time (BT).
+## Introduction
 
-## Features
+Scheduling is a critical part of an operating system's functionality, managing the execution of processes by the CPU. This repository provides Python implementations of several key scheduling algorithms, offering a practical resource for students and enthusiasts to understand and experiment with these concepts.
 
-- Calculate Completion Time (CT)
-- Calculate Turnaround Time (TAT)
-- Calculate Waiting Time (WT)
-- Compute Average Completion Time (Avg. CT)
-- Compute Average Turnaround Time (Avg. TAT)
-- Compute Average Waiting Time (Avg. WT)
-- Supports `n` number of processes
+## Algorithms Implemented
 
-## Prerequisites
+1. **First-Come, First-Served (FCFS)**
+2. **Shortest Job First (SJF)**
+3. **Priority Scheduling**
+4. **Round Robin (RR)**
+5. **Longest Job First (LJF)**
 
-- Python 3.12.4
+## Requirements
 
-## Installation
-
-1. Clone the repository:
-
-    ```sh
-    git clone https://github.com/STiFLeR7/FCFS-OS.git
-    ```
-
-2. Change to the project directory:
-
-    ```sh
-    cd FCFS-OS
-    ```
+To run the code in this repository, you need to have Python installed. You can download Python from [here](https://www.python.org/downloads/).
 
 ## Usage
 
-1. Ensure you have Python 3 installed.
-2. Run the script:
+Each algorithm is contained in its own Python file. To run an algorithm, simply execute the corresponding Python file.
 
-    ```sh
-    python FCFS.py
-    ```
-
-3. Enter the number of processes, their Arrival Times (AT), and Burst Times (BT) as prompted.
-
-## Example
-
-Here's an example of how the program works:
-
-Enter the number of processes: 3
-
-Enter the Arrival Time for process 1: 0
-Enter the Burst Time for process 1: 5
-
-Enter the Arrival Time for process 2: 1
-Enter the Burst Time for process 2: 3
-
-Enter the Arrival Time for process 3: 2
-Enter the Burst Time for process 3: 8
-
-Process AT BT CT TAT WT
-1        0 5  5  5   0
-2        1 3  8  7   4
-3        2 8 16 14   6
-
-Average CT: 9.67
-Average TAT: 8.67
-Average WT: 3.33
